@@ -1,47 +1,68 @@
 # Website starter file with Gulp, Sass and Browsersync
 
-## Use your MAC terminal to install packages, plugins and dependencies
+### Created a website started file using Gulp to automate javascript, css and image files
 
-1. `mkdir <project-folder-name>` - to create a project folder
-2. `cd <project-folder-name>>` to switch to your project folder
-3. `mkdir -p <folder-name-1> <folder-name-2>` to create multiple folders
-4. `touch <filename.extension>` to create a file inside a folder
-5. `cd or cd ..` to go back to root folder
+## Using MAC terminal to install packages, plugins and dependencies
+
+1. Create a project folder
+   `mkdir <project-folder-name>`
+2. Switch to your project folder
+   `cd <project-folder-name>>`
+3. Add JS, SCSS and CSS folders
+   `mkdir -p <folder-name-1> <folder-name-2>`
+4. Add JS and CSS files in respective nested folders
+   `touch <filename.extension>`
+5. To go back to root directory
+   `cd or cd ..`
 
 ## Set up GULP with SASS and BrowserSync
 
 1. Check if node and npm are installed in global env
-   `node --v` for node.js (Node.js is an asynchronouse event-driven Javascript runtime)
-   `npm --v` for npm (npm is used to adapt or incporporate packages of code to new and currently building apps)
+
+   - Node.js - Node.js is an asynchronouse event-driven Javascript runtime
+     `node --v`
+
+   - NPM - used to adapt or incporporate packages of code to new and currently building apps
+     `npm --v`
 
    If it's not installed yet:
 
-   - Install latest npm
+   - Install latest NPM
      `npm install -g npm`
 
-   - Install (node)[https://nodejs.org/en/download]
+   - Install [Node.js](https://nodejs.org/en/download)
 
-2. Install SASS in your project folder
-   `npm install -g sass`
+2. Set up [SASS](https://sass-lang.com/) in your project folder
 
-   - [How to install SASSS in local project] (https://dev.to/rembertdesigns/setting-up-sass-on-your-local-server-ko1)
+   - Install Node-sass to compile `.scss` and `.css`
+     `npm install node-sass --save-dev`
 
-3. Install Gulp and plugins
+   - Add this in your package.json
+     `"compile-sass": "node-sass sass/main.scss css/style.css`
+
+3. Install Gulp and its plugins
 
    1. Check if Gulp is installed globally
-      `gulp --version`
+
+      - To check Gulp version
+        `gulp --version`
 
       - If its not install, install the gulp command utility
         `npm install --global gulp-cli`
 
-   2. Create a project directory and navigate into it
+   2. Create a project directory and switch to it
+
    3. Create a package.json file in your project directory
       `npm init`
+
    4. Install Gulp in your project directory
-      `npm install --save-dev gulp`
+
+      - `npm install --save-dev gulp`
+
       - Verify your gulp version
         `gulp --version`
-   5. Install (Gulp plugins)[https://gulpjs.com/plugins] for website starter boilerplate
+
+   5. Install the following [Gulp plugins](https://gulpjs.com/plugins) for website starter boilerplate
 
       - _autoprefixer_ - Prefix CSS
       - _cssnano_ - Minify CSS with cssnano
@@ -49,8 +70,8 @@
       - _postcss_ - to pipe CSS through several plugins, but parse CSS only once
       - _replace_ - A string replace plugin for gulp
       - _sourcemaps_ - Sourcemaps solve the debugging problem by providing a mapping between the original source code and the compressed version
-      - (_terser_)[https://terser.org/] - compressor toolkit for ES6+. It removes comments, makes variable names smaller, and removes whitespace
-      - (_browser-sync_)[https://browsersync.io/] - live-testing browser that cuts out repetitive manual testing tasks from replication to click mirroring
+      - [_terser_](https://terser.org/) - compressor toolkit for ES6+. It removes comments, makes variable names smaller, and removes whitespace
+      - [_browser-sync_](https://browsersync.io/) - live-testing browser that cuts out repetitive manual testing tasks from replication to click mirroring
       - _imagemin_ - Minify PNG, JPEG, GIF and SVG images
 
       **Run this code to install the plugins**
@@ -58,18 +79,18 @@
 
 # To implement
 
-- _webp_ - Convert images to WebP. Encounter error: ERR_REQUIRE_ESM
+- _webp_ - Convert images to WebP. I enncounter error: ERR_REQUIRE_ESM when I install gulp-webp plugin. Downgrading gulp created another error called ReferenceError: primordials is not defined. Using webp image in the starter file still works but have yet to test it properly.
 
 # Resources:
 
-- (Browser-sync)[https://youtu.be/q0E1hbcj-NI]
-- (Gulp 4 Crash Course for Beginners)[https://youtu.be/-lG0kDeuSJk]
-- (Minify webp images)[https://www.youtube.com/watch?v=ubHwScDfRQA&t=958s]
-- (How to resolve ERR_REQUIRE_ESM)[https://stackoverflow.com/questions/69862766/getting-error-err-require-esm-while-running-gulp-command]
+- [Browser-sync](https://youtu.be/q0E1hbcj-NI)
+- [Gulp 4 Crash Course for Beginners](https://youtu.be/-lG0kDeuSJk)
+- [Minify webp images](https://www.youtube.com/watch?v=ubHwScDfRQA&t=958s)
+- [How to resolve ERR_REQUIRE_ESM](https://stackoverflow.com/questions/69862766/getting-error-err-require-esm-while-running-gulp-command)
 
 # Credits
 
 Thanks to the following:
 
-- (Coding in Public)[https://www.youtube.com/@CodinginPublic]
-- (Coder Coder)[https://www.youtube.com/@TheCoderCoder]
+- [Coding in Public](https://www.youtube.com/@CodinginPublic)
+- [Coder Coder](https://www.youtube.com/@TheCoderCoder)
