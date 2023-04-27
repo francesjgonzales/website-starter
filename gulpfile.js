@@ -11,11 +11,12 @@ const terser = require('gulp-terser');
 const browsersync = require('browser-sync');
 const imagemin = require('gulp-imagemin');
 
+
 //File path variables 
 const files = {
     scssPath: 'app/scss/**/*.scss',
     jsPath: 'app/js/**/*.js',
-    imagePath: 'app/images/**/*.{jpg,png,svg,jpeg}',
+    imagePath: 'app/images/**/*.{jpg,png,svg,jpeg,gif}',
 }
 
 //Sass - to compile Sass files
@@ -41,7 +42,7 @@ function jsTask() {
 function optimizeImg() {
     return src(files.imagePath)
         .pipe(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
+            imagemin.gifsicle({ interlaced: true, optimizationLevel: 1, colors: 10, buffer: Buffer }),
             imagemin.mozjpeg({ quality: 80, progressive: true }),
             imagemin.optipng({ optimizationLevel: 2 }),
             imagemin.svgo({

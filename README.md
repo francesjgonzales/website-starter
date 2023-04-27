@@ -75,7 +75,7 @@
       - [_terser_](https://terser.org/) - compressor toolkit for ES6+. It removes comments, makes variable names smaller, and removes whitespace
       - [_browser-sync_](https://browsersync.io/) - live-testing browser that cuts out repetitive manual testing tasks from replication to click mirroring
       - [_imagemin_](https://www.npmjs.com/package/gulp-imagemin)
-        - gifsicle — Compress GIF images, lossless
+        - [gifsicle](https://www.npmjs.com/package/imagemin-gifsicle) — Compress GIF images, lossless. Reduce the number of distinct colors in each output GIF to num or less. Num must be between 2 and 256. This helps to minify the filesize but quality will be poor
         - mozjpeg — Compress JPEG images, lossy
         - optipng — Compress PNG images, lossless
         - svgo — Compress SVG images, lossless
