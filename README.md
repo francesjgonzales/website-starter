@@ -1,5 +1,7 @@
 # Website starter file with Gulp, Sass and Browsersync
 
+[Sample live site](https://comforting-manatee-0abf78.netlify.app/)
+
 ### Created a website started file using Gulp to automate javascript, css and image files
 
 \*NOTE: It minifies png, svg and jpg but not Webp image.
