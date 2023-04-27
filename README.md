@@ -2,6 +2,8 @@
 
 ### Created a website started file using Gulp to automate javascript, css and image files
 
+\*NOTE: It minifies png, svg and jpg but not Webp image.
+
 ## Using MAC terminal to install packages, plugins and dependencies
 
 1. Create a project folder
@@ -72,7 +74,11 @@
       - _sourcemaps_ - Sourcemaps solve the debugging problem by providing a mapping between the original source code and the compressed version
       - [_terser_](https://terser.org/) - compressor toolkit for ES6+. It removes comments, makes variable names smaller, and removes whitespace
       - [_browser-sync_](https://browsersync.io/) - live-testing browser that cuts out repetitive manual testing tasks from replication to click mirroring
-      - _imagemin_ - Minify PNG, JPEG, GIF and SVG images
+      - [_imagemin_](https://www.npmjs.com/package/gulp-imagemin)
+        - gifsicle — Compress GIF images, lossless
+        - mozjpeg — Compress JPEG images, lossy
+        - optipng — Compress PNG images, lossless
+        - svgo — Compress SVG images, lossless
 
       **Run this code to install the plugins**
       `npm install --save-dev gulp-autoprefixer gulp-cssnano gulp-concat postcss gulp-postcss gulp-replace sass gulp-sass gulp-sourcemaps gulp-terser gulp-browser-sync gulp-imagemin gulp-webp`

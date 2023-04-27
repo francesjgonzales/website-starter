@@ -41,9 +41,15 @@ function jsTask() {
 function optimizeImg() {
     return src(files.imagePath)
         .pipe(imagemin([
+            imagemin.gifsicle({ interlaced: true }),
             imagemin.mozjpeg({ quality: 80, progressive: true }),
             imagemin.optipng({ optimizationLevel: 2 }),
-            /* webp({ quality: 80 }) */
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
+                ]
+            })
         ]))
         /* .pipe(extReplace('.webp')) */
         .pipe(dest('dist/images'));
