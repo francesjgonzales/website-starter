@@ -4,8 +4,6 @@ The purpose of this project is to understand how to automate repetitive tasks fo
 
 I use [Gulp](https://gulpjs.com/) as a task runner to minify and concatenate Javascript and CSS files and image optimization. The tool uses API to define tasks and dependencies, and it runs these tasks in a fast and reliable manner. It is built on Node.js and can be installed via npm (Node Package Manager) like any other Node.js module.
 
-I also set up a test environment using JEST.
-
 \*NOTE: For images, it minifies png, svg, gif and jpg but not Webp file.
 
 [Sample live site](https://comforting-manatee-0abf78.netlify.app/)
