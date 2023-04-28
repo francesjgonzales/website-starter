@@ -1,12 +1,16 @@
 # Website starter file with Gulp, Sass and Browsersync
 
+The purpose of this project is to understand how to automate repetitive tasks for JavaScript-based web development projects.
+
+I use [Gulp](https://gulpjs.com/) as a task runner to minify and concatenate Javascript and CSS files and image optimization. The tool uses API to define tasks and dependencies, and it runs these tasks in a fast and reliable manner. It is built on Node.js and can be installed via npm (Node Package Manager) like any other Node.js module.
+
+I also set up a test environment using JEST.
+
+\*NOTE: For images, it minifies png, svg, gif and jpg but not Webp file.
+
 [Sample live site](https://comforting-manatee-0abf78.netlify.app/)
 
-### Created a website started file using Gulp to automate javascript, css and image files
-
-\*NOTE: It minifies png, svg and jpg but not Webp image.
-
-## Using MAC terminal to install packages, plugins and dependencies
+## Using MAC terminal to install presets, plugins and dependencies
 
 1. Create a project folder
    `mkdir <project-folder-name>`
@@ -19,7 +23,7 @@
 5. To go back to root directory
    `cd or cd ..`
 
-## Set up GULP with SASS and BrowserSync
+## Set up GULP with SASS, SourceMaps, Imagemin & BrowserSync
 
 1. Check if node and npm are installed in global env
 
@@ -84,6 +88,10 @@
 
       **Run this code to install the plugins**
       `npm install --save-dev gulp-autoprefixer gulp-cssnano gulp-concat postcss gulp-postcss gulp-replace sass gulp-sass gulp-sourcemaps gulp-terser gulp-browser-sync gulp-imagemin gulp-webp`
+
+## Set up testing environment using JEST
+
+1.
 
 # To implement
 

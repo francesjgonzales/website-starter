@@ -1,1 +1,1 @@
-console.log("Hello we are BTS");
+console.log("Hey");
