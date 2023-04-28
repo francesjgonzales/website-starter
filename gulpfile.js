@@ -56,10 +56,6 @@ function optimizeImg() {
         .pipe(dest('dist/images'));
 }
 
-
-// Convert optimize images to webp
-
-
 //Browsersync Tasks
 function browsersyncServe(cb) {
     browsersync.init({
